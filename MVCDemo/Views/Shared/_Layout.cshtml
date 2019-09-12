@@ -1,0 +1,123 @@
+﻿@{ 
+    ViewBag.Application = "Manager sales e-Commerce";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mon application ASP.NET</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container snip1135">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Manager sales e-Commerce", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" style="margin-left:0px;padding:0px;">
+                        <li>@Html.ActionLink(" Home", "Index", "Home")</li>
+                        <li>
+                            @Html.ActionLink("Espace Commande", "", "", null, new { @class = "dropdown-toggle", href = "#", data_toggle = "dropdown", role = "button", aria_haspopup = "true", aria_expanded = "false" })
+                            <div class="dropdown-menu" style="background-color:white;border-top:4px;font-size:13px;font-family:Arial,Tahoma,Verdana;width:600px;">
+                                <div class="row">
+                                    <div class="col-md-6" style="width:40%; margin-right:5px;">
+                                        <h3 style="font-size:12px;font-weight:bold;color:brown;font-family:Arial,Tahoma,Verdana;"><i class="glyphicon glyphicon-home"></i>Role</h3>
+                                        <div class="divider" style="color:cornflowerblue;"></div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Get All Rules</li>
+                                            <li class="list-group-item">Get All Users</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6" style="width:40%;margin-left:5px;">
+                                        <h3 style="font-size:12px;font-weight:bold;color:brown;font-family:Arial,Tahoma,Verdana;">Utilisateur</h3>
+                                        <div class="divider" style="color:cornflowerblue;"></div>
+                                        <ul class="list-group" style="margin:0px;">
+                                            <li class="list-group-item"><i class="glyphicon glyphicon-user"></i>Reinitialisation Mot de passe</li>
+                                            <li class="list-group-item"><i class="glyphicon glyphicon-log-out"></i>Logoutx</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            @Html.ActionLink("Espace Vente", "", "", null, new { @class = "dropdown-toggle", href = "#", data_toggle = "dropdown", role = "button", aria_haspopup = "true", aria_expanded = "false" })
+                            <div class="dropdown-menu" style="background-color:#D3D3D3;font-size:13px;font-family:Arial,Tahoma,Verdana;width:600px;">
+                                <div class="row">
+                                    <div class="col-md-6" style="width:40%; margin-right:5px;">
+                                        <h3 style="font-size:12px;font-weight:bold;color:brown;font-family:Arial,Tahoma,Verdana;"><i class="glyphicon glyphicon-home"></i>Role</h3>
+                                        <div class="divider" style="color:cornflowerblue;"></div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Get All Rules</li>
+                                            <li class="list-group-item">Get All Users</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6" style="width:40%;margin-left:5px;">
+                                        <h3 style="font-size:12px;font-weight:bold;color:brown;font-family:Arial,Tahoma,Verdana;">Utilisateur</h3>
+                                        <div class="divider" style="color:cornflowerblue;"></div>
+                                        <ul class="list-group" style="margin:0px;">
+                                            <li class="list-group-item"><i class="glyphicon glyphicon-user"></i>Reinitialisation Mot de passe</li>
+                                            <li class="list-group-item"><i class="glyphicon glyphicon-log-out"></i>Logoutx</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>@Html.ActionLink(" A propos de Gestion du ventes", "Contact", "Home")</li>
+                        <li>
+                        <li class="dropdown">
+                            @Html.ActionLink("Administration", "", "", null, new { @class = "dropdown-toggle", href = "#", data_toggle = "dropdown", role = "button", aria_haspopup = "true", aria_expanded = "false" })
+                            <div class="dropdown-menu" style="background-color:#D3D3D3;font-size:13px;font-family:Arial,Tahoma,Verdana;width:600px;">
+                                <div class="row">
+                                    <div class="col-md-6" style="width:40%; margin-right:5px;">
+                                        <h3 style="font-size:12px;font-weight:bold;color:brown;font-family:Arial,Tahoma,Verdana;"><i class="glyphicon glyphicon-home"></i>Role</h3>
+                                        <div class="divider" style="color:cornflowerblue;"></div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Get All Rules</li>
+                                            <li class="list-group-item">Get All Users</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6" style="width:40%;margin-left:5px;">
+                                        <h3 style="font-size:12px;font-weight:bold;color:brown;font-family:Arial,Tahoma,Verdana;">Utilisateur</h3>
+                                        <div class="divider" style="color:cornflowerblue;"></div>
+                                        <ul class="list-group" style="margin:0px;">
+                                            <li class="list-group-item">@Html.ActionLink("Reset Password","ResetPassword","Account",null,new { code=1})</li>
+                                            <li class="list-group-item"><i class="glyphicon glyphicon-log-out"></i>Logoutx</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Mon application ASP.NET</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+ </body>
+</html>
